@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Project_B_FinalModel3.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ScoreCN">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Name="StudentID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ClassID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Toan" Type="float" />
+    <Property Name="Van" Type="float" />
+    <Property Name="Sinh" Type="float" />
+    <Property Name="Ly" Type="float" />
+    <Property Name="Hoa" Type="float" />
+    <Property Name="Su" Type="float" />
+    <Property Name="Dia" Type="float" />
+    <Property Name="NN" Type="float" />
+    <Property Name="GDCD" Type="float" />
+    <Property Name="CN" Type="float" />
+    <Property Name="Tin" Type="float" />
+    <Property Name="TD" Type="bit" />
+    <Property Name="TBHK2" Type="float" />
+  </EntityType>
+  <EntityContainer Name="Project_B_FinalModel3StoreContainer">
+    <EntitySet Name="ScoreCN" EntityType="Self.ScoreCN" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

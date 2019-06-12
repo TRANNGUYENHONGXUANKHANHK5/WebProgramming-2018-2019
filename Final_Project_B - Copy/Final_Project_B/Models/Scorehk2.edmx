@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Project_B_FinalModel3.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ScoreCN">
+          <Key>
+            <PropertyRef Name="StudentID" />
+          </Key>
+          <Property Name="StudentID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ClassID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Toan" Type="float" />
+          <Property Name="Van" Type="float" />
+          <Property Name="Sinh" Type="float" />
+          <Property Name="Ly" Type="float" />
+          <Property Name="Hoa" Type="float" />
+          <Property Name="Su" Type="float" />
+          <Property Name="Dia" Type="float" />
+          <Property Name="NN" Type="float" />
+          <Property Name="GDCD" Type="float" />
+          <Property Name="CN" Type="float" />
+          <Property Name="Tin" Type="float" />
+          <Property Name="TD" Type="bit" />
+          <Property Name="TBHK2" Type="float" />
+        </EntityType>
+        <EntityContainer Name="Project_B_FinalModel3StoreContainer">
+          <EntitySet Name="ScoreCN" EntityType="Self.ScoreCN" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Project_B_FinalModel3" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ScoreCN">
+          <Key>
+            <PropertyRef Name="StudentID" />
+          </Key>
+          <Property Name="StudentID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ClassID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Toan" Type="Double" />
+          <Property Name="Van" Type="Double" />
+          <Property Name="Sinh" Type="Double" />
+          <Property Name="Ly" Type="Double" />
+          <Property Name="Hoa" Type="Double" />
+          <Property Name="Su" Type="Double" />
+          <Property Name="Dia" Type="Double" />
+          <Property Name="NN" Type="Double" />
+          <Property Name="GDCD" Type="Double" />
+          <Property Name="CN" Type="Double" />
+          <Property Name="Tin" Type="Double" />
+          <Property Name="TD" Type="Boolean" />
+          <Property Name="TBHK2" Type="Double" />
+        </EntityType>
+        <EntityContainer Name="Project_B_FinalEntities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ScoreCNs" EntityType="Self.ScoreCN" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Project_B_FinalModel3StoreContainer" CdmEntityContainer="Project_B_FinalEntities2">
+          <EntitySetMapping Name="ScoreCNs">
+            <EntityTypeMapping TypeName="Project_B_FinalModel3.ScoreCN">
+              <MappingFragment StoreEntitySet="ScoreCN">
+                <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+                <ScalarProperty Name="ClassID" ColumnName="ClassID" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="Toan" ColumnName="Toan" />
+                <ScalarProperty Name="Van" ColumnName="Van" />
+                <ScalarProperty Name="Sinh" ColumnName="Sinh" />
+                <ScalarProperty Name="Ly" ColumnName="Ly" />
+                <ScalarProperty Name="Hoa" ColumnName="Hoa" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Dia" ColumnName="Dia" />
+                <ScalarProperty Name="NN" ColumnName="NN" />
+                <ScalarProperty Name="GDCD" ColumnName="GDCD" />
+                <ScalarProperty Name="CN" ColumnName="CN" />
+                <ScalarProperty Name="Tin" ColumnName="Tin" />
+                <ScalarProperty Name="TD" ColumnName="TD" />
+                <ScalarProperty Name="TBHK2" ColumnName="TBHK2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

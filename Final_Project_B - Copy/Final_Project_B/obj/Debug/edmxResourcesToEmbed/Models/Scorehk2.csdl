@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Project_B_FinalModel3" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ScoreCN">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Name="StudentID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ClassID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Toan" Type="Double" />
+    <Property Name="Van" Type="Double" />
+    <Property Name="Sinh" Type="Double" />
+    <Property Name="Ly" Type="Double" />
+    <Property Name="Hoa" Type="Double" />
+    <Property Name="Su" Type="Double" />
+    <Property Name="Dia" Type="Double" />
+    <Property Name="NN" Type="Double" />
+    <Property Name="GDCD" Type="Double" />
+    <Property Name="CN" Type="Double" />
+    <Property Name="Tin" Type="Double" />
+    <Property Name="TD" Type="Boolean" />
+    <Property Name="TBHK2" Type="Double" />
+  </EntityType>
+  <EntityContainer Name="Project_B_FinalEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ScoreCNs" EntityType="Self.ScoreCN" />
+  </EntityContainer>
+</Schema>

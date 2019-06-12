@@ -1,0 +1,15 @@
+.main{
+    max-width: 1360px;
+    /*border: 1px solid black;*/
+    margin: 0 auto;
+}
+
+.card{
+    margin-top:20px;
+}
+
+#box {
+    padding: 10px 0;
+    margin-top: 25px;
+    background-color: #EEEEEE;
+}

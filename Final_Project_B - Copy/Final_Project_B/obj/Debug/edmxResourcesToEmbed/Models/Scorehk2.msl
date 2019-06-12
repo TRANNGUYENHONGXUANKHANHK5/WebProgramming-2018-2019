@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Project_B_FinalModel3StoreContainer" CdmEntityContainer="Project_B_FinalEntities2">
+    <EntitySetMapping Name="ScoreCNs">
+      <EntityTypeMapping TypeName="Project_B_FinalModel3.ScoreCN">
+        <MappingFragment StoreEntitySet="ScoreCN">
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="ClassID" ColumnName="ClassID" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Toan" ColumnName="Toan" />
+          <ScalarProperty Name="Van" ColumnName="Van" />
+          <ScalarProperty Name="Sinh" ColumnName="Sinh" />
+          <ScalarProperty Name="Ly" ColumnName="Ly" />
+          <ScalarProperty Name="Hoa" ColumnName="Hoa" />
+          <ScalarProperty Name="Su" ColumnName="Su" />
+          <ScalarProperty Name="Dia" ColumnName="Dia" />
+          <ScalarProperty Name="NN" ColumnName="NN" />
+          <ScalarProperty Name="GDCD" ColumnName="GDCD" />
+          <ScalarProperty Name="CN" ColumnName="CN" />
+          <ScalarProperty Name="Tin" ColumnName="Tin" />
+          <ScalarProperty Name="TD" ColumnName="TD" />
+          <ScalarProperty Name="TBHK2" ColumnName="TBHK2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

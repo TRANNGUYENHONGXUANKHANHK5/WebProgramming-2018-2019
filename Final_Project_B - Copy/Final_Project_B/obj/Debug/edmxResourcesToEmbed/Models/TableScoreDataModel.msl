@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Project_B_FinalModel1StoreContainer" CdmEntityContainer="Project_B_FinalEntities">
+    <EntitySetMapping Name="Class_Info">
+      <EntityTypeMapping TypeName="Project_B_FinalModel1.Class_Info">
+        <MappingFragment StoreEntitySet="Class_Info">
+          <ScalarProperty Name="ClassID" ColumnName="ClassID" />
+          <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreCNs">
+      <EntityTypeMapping TypeName="Project_B_FinalModel1.ScoreCN">
+        <MappingFragment StoreEntitySet="ScoreCN">
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="ClassID" ColumnName="ClassID" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Toan" ColumnName="Toan" />
+          <ScalarProperty Name="Van" ColumnName="Van" />
+          <ScalarProperty Name="Sinh" ColumnName="Sinh" />
+          <ScalarProperty Name="Ly" ColumnName="Ly" />
+          <ScalarProperty Name="Hoa" ColumnName="Hoa" />
+          <ScalarProperty Name="Su" ColumnName="Su" />
+          <ScalarProperty Name="Dia" ColumnName="Dia" />
+          <ScalarProperty Name="NN" ColumnName="NN" />
+          <ScalarProperty Name="GDCD" ColumnName="GDCD" />
+          <ScalarProperty Name="CN" ColumnName="CN" />
+          <ScalarProperty Name="Tin" ColumnName="Tin" />
+          <ScalarProperty Name="TD" ColumnName="TD" />
+          <ScalarProperty Name="TBHK1" ColumnName="TBHK1" />
+          <ScalarProperty Name="TBHK2" ColumnName="TBHK2" />
+          <ScalarProperty Name="TBCN" ColumnName="TBCN" />
+          <ScalarProperty Name="HocLuc" ColumnName="HocLuc" />
+          <ScalarProperty Name="HanhKiem" ColumnName="HanhKiem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHK1">
+      <EntityTypeMapping TypeName="Project_B_FinalModel1.ScoreHK1">
+        <MappingFragment StoreEntitySet="ScoreHK1">
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="ClassID" ColumnName="ClassID" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Toan" ColumnName="Toan" />
+          <ScalarProperty Name="Van" ColumnName="Van" />
+          <ScalarProperty Name="Sinh" ColumnName="Sinh" />
+          <ScalarProperty Name="Ly" ColumnName="Ly" />
+          <ScalarProperty Name="Hoa" ColumnName="Hoa" />
+          <ScalarProperty Name="Su" ColumnName="Su" />
+          <ScalarProperty Name="Dia" ColumnName="Dia" />
+          <ScalarProperty Name="NN" ColumnName="NN" />
+          <ScalarProperty Name="GDCD" ColumnName="GDCD" />
+          <ScalarProperty Name="CN" ColumnName="CN" />
+          <ScalarProperty Name="Tin" ColumnName="Tin" />
+          <ScalarProperty Name="TD" ColumnName="TD" />
+          <ScalarProperty Name="TBHK1" ColumnName="TBHK1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

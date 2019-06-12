@@ -1,0 +1,141 @@
+﻿@model IEnumerable<Final_Project_B.Models.ScoreHK1>
+@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+    if (Session["userID"] == null)
+    {
+        Response.Redirect("~/Login/Index");
+    }
+}
+
+<div id="filter">
+    <div id="box" class="clear" style="border-radius: 8px; background-color: antiquewhite;">
+        <div class="fl_left" style="margin-top:10px; padding-left:10px;">
+            <h4 id="subName">BẢNG ĐIỂM LỚP</h4>
+        </div>
+        <div class="fl_right" style="margin-top: 10px;display: flex; float:right; margin-bottom:10px; ">
+            <span class="rgtspace-5">Lớp</span>
+            <div class="rgtspace-5" id="idClassSelect">
+                <select id="idSelect">
+                    <option value="12B">12B</option>
+                    <option value="12D1">12D1</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StudentID)
+           
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Toan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Van)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sinh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ly)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hoa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Su)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GDCD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TBHK1)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Toan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Van)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sinh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ly)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hoa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Su)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GDCD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TBHK1)
+            </td>
+            <td>
+                @Html.ActionLink("Chỉnh sửa", "Edit", new {  id=item.StudentID }) |
+            </td>
+        </tr>
+    }
+
+</table>
+
+<script>
+    $('#idClassSelect').on('change', function () {
+        var id = "";
+        $("select option:selected").each(function () {
+            id += $(this).text() + " ";
+        });
+    })
+</script>
