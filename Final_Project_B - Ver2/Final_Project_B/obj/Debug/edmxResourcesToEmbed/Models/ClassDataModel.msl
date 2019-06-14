@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Project_B_FinalModel1StoreContainer" CdmEntityContainer="Project_B_FinalEntities4">
+    <EntitySetMapping Name="Class_Info">
+      <EntityTypeMapping TypeName="Project_B_FinalModel1.Class_Info">
+        <MappingFragment StoreEntitySet="Class_Info">
+          <ScalarProperty Name="ClassID" ColumnName="ClassID" />
+          <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

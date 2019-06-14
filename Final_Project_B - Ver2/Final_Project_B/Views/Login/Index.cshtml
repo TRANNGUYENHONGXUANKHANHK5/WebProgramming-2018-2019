@@ -1,0 +1,62 @@
+﻿@model Final_Project_B.Models.Login_Info
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Css/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="loginbox">
+        @using (Html.BeginForm("Autherize", "Login", FormMethod.Post))
+        {
+            <img src="~/Images/logo_1.jpg" class="avatar">
+            <h1>Login Here</h1>
+            <table>
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.UserName)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.UserName)
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>@Html.ValidationMessageFor(model => model.UserName)</td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.Password)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.Password)
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label class="field-validation-error">
+                            @Html.DisplayFor(model => model.LoginErrorMessage)
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>@Html.ValidationMessageFor(model => model.Password)</td>
+                </tr>
+            </table>
+            <input type="submit" name="name" value="Login" />
+        }
+    </div>
+    <script src="~/Script/jquery-1.10.2.js"></script>
+    <script src="~/Script/jquery.validate.js"></script>
+    <script src="~/Script/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>

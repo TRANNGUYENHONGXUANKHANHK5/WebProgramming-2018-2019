@@ -1,0 +1,179 @@
+﻿@{
+    Layout = null;
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+    if (Session["userID"] == null)
+    {
+        Response.Redirect("~/Login/Index");
+    }
+}
+
+<div class="row">
+    <div class="col-sm-3">
+        <div class="card">
+            <div class="card-header">
+                Chuyên môn
+            </div>
+            <div class="card-body">
+                <div style="border-bottom: 1px dashed #ccc; padding-bottom:5px;">
+                    <a style="font-size:10px; color: rgba(0, 0, 0, 0.4)"><i class="far fa-clock"></i> 12/04/2019</a><br />
+                    <a href="#" style="font-size:13px;">HƯỚNG DẪN ĐÁNH GIÁ VÀ NỘP HỒ SƠ TỔNG KẾT ĐHSP</a>
+                </div>
+                <div style="border-bottom: 1px dashed #ccc; padding-bottom:5px;">
+                    <a style="font-size:10px; color: rgba(0, 0, 0, 0.4)"><i class="far fa-clock"></i> 10/04/2019</a><br />
+                    <a href="#" style="font-size:13px;">TKB SV TTSP ĐHSP TUẦN 9 (8/4 - >13/4/2019)</a>
+                </div>
+                <div style="border-bottom: 1px dashed #ccc; padding-bottom:5px;">
+                    <a style="font-size:10px; color: rgba(0, 0, 0, 0.4)"><i class="far fa-clock"></i> 02/04/2019</a><br />
+                    <a href="#" style="font-size:13px;">TKB SV TTSP ĐHSP VÀ ĐHSG NĂM 4 TUẦN 8</a>
+                </div>
+                <div style="border-bottom: 1px dashed #ccc; padding-bottom:5px;">
+                    <a style="font-size:10px; color: rgba(0, 0, 0, 0.4)"><i class="far fa-clock"></i> 30/03/2019</a><br />
+                    <a href="#" style="font-size:13px;">HƯỚNG ĐẪN ĐÁNH GIÁ TỔNG KẾT TTSP ĐHSG NĂM 4 NH 2018 - 2019</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-header">
+                Hoạt động thư viện
+            </div>
+            <div class="card-body">
+                <div style="border-bottom: 1px dashed #ccc; padding-bottom:5px;">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img src="~/Images/7.jpg" style="max-height: 70px; width:150px;" />
+                        </div>
+                        <div class="col-sm-9">
+                            <a style="font-size:10px; color: rgba(0, 0, 0, 0.4)"><i class="far fa-clock"></i> 12/04/2019</a><br />
+                            <a href="#" style="font-size:13px;">KẾ HOẠCH HỘI SÁCH HỌC ĐƯỜNG NĂM HỌC 2017 - 2018</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="border-bottom: 1px dashed #ccc; padding-bottom:5px;">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img src="~/Images/8.jpg" style="max-height: 70px; width:150px;" />
+                        </div>
+                        <div class="col-sm-9">
+                            <a style="font-size:10px; color: rgba(0, 0, 0, 0.4)"><i class="far fa-clock"></i> 10/04/2019</a><br />
+                            <a href="#" style="font-size:13px;">DANH SÁCH SỐ BÁO DANH 3 KHỐI KIỂM TRA TRẮC NGHIỆM TẠI LỚP</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="border-bottom: 1px dashed #ccc; padding-bottom:5px;">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img src="~/Images/9.jpg" style="max-height: 70px; width:150px;" />
+                        </div>
+                        <div class="col-sm-9">
+                            <a style="font-size:10px; color: rgba(0, 0, 0, 0.4)"><i class="far fa-clock"></i> 02/04/2019</a><br />
+                            <a href="#" style="font-size:13px;">GIỚI THIỆU DANH MỤC SÁCH ÔN TẬP KÌ THI THPT QUỐC GIA NĂM 2016</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="border-bottom: 1px dashed #ccc; padding-bottom:5px;">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img src="~/Images/10.jpg" style="max-height: 70px; width:150px;" />
+                        </div>
+                        <div class="col-sm-9">
+                            <a style="font-size:10px; color: rgba(0, 0, 0, 0.4)"><i class="far fa-clock"></i> 30/03/2019</a><br />
+                            <a href="#" style="font-size:13px;">THƯ MỤC GIỚI THIỆU SÁCH</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Hoạt động thư viện
+            </div>
+            <div class="card-body">
+                <div style="border-bottom: 1px dashed #ccc; padding-bottom:5px;">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img src="~/Images/7.jpg" style="max-height: 70px; width:150px;" />
+                        </div>
+                        <div class="col-sm-9">
+                            <a style="font-size:10px; color: rgba(0, 0, 0, 0.4)"><i class="far fa-clock"></i> 12/04/2019</a><br />
+                            <a href="#" style="font-size:13px;">KẾ HOẠCH HỘI SÁCH HỌC ĐƯỜNG NĂM HỌC 2017 - 2018</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="border-bottom: 1px dashed #ccc; padding-bottom:5px;">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img src="~/Images/8.jpg" style="max-height: 70px; width:150px;" />
+                        </div>
+                        <div class="col-sm-9">
+                            <a style="font-size:10px; color: rgba(0, 0, 0, 0.4)"><i class="far fa-clock"></i> 10/04/2019</a><br />
+                            <a href="#" style="font-size:13px;">DANH SÁCH SỐ BÁO DANH 3 KHỐI KIỂM TRA TRẮC NGHIỆM TẠI LỚP</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="border-bottom: 1px dashed #ccc; padding-bottom:5px;">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img src="~/Images/9.jpg" style="max-height: 70px; width:150px;" />
+                        </div>
+                        <div class="col-sm-9">
+                            <a style="font-size:10px; color: rgba(0, 0, 0, 0.4)"><i class="far fa-clock"></i> 02/04/2019</a><br />
+                            <a href="#" style="font-size:13px;">GIỚI THIỆU DANH MỤC SÁCH ÔN TẬP KÌ THI THPT QUỐC GIA NĂM 2016</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="border-bottom: 1px dashed #ccc; padding-bottom:5px;">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img src="~/Images/10.jpg" style="max-height: 70px; width:150px;" />
+                        </div>
+                        <div class="col-sm-9">
+                            <a style="font-size:10px; color: rgba(0, 0, 0, 0.4)"><i class="far fa-clock"></i> 30/03/2019</a><br />
+                            <a href="#" style="font-size:13px;">THƯ MỤC GIỚI THIỆU SÁCH</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="card">
+            <div class="card-header">
+                Các hoạt động
+            </div>
+            <div class="card-body">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="~/Images/1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="~/Images/2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="~/Images/3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="card-link">Hoạt động công đoàn</a>
+            </div>
+            <div class="card-body">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="~/Images/4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="~/Images/5.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="~/Images/6.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="card-link">Đoàn TNCS Hồ Chí Minh</a>
+            </div>
+        </div>
+    </div>
+</div>
